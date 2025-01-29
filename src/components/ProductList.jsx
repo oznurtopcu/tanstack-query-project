@@ -25,6 +25,7 @@ export default function ProductList() {
     return(
         <>
             <button onClick={handleClick}>Profile</button>
+            <ProductForm/>
             <ul>
                 {data.map((item, index) => {
                     return <li key={index}>{item.title}</li>
